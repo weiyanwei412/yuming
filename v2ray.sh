@@ -758,9 +758,13 @@ install_v2ray() {
 		cp -rf $(pwd)/* /etc/v2ray/233boy/v2ray
 	else
 		#pushd /tmp
-                 mkdir -p /etc/v2ray/233boy/v2ray
-		cp -r /opt/yuming/* /etc/v2ray/233boy/v2ray 
+                # mkdir -p /etc/v2ray/233boy/v2ray
+		#cp -r /opt/yuming/* /etc/v2ray/233boy/v2ray 
 		#popd
+                pushd /tmp
+                git clone https://github.com/weiyanwei412/yuming.git -b "$_gitbranch" /etc/v2ray/233boy/v2ray --depth=1
+                popd
+
 
 	fi
 
