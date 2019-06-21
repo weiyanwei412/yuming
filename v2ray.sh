@@ -762,7 +762,7 @@ install_v2ray() {
 		#cp -r /opt/yuming/* /etc/v2ray/233boy/v2ray 
 		#popd
                 pushd /tmp
-                git clone https://github.com/weiyanwei412/yuming.git -b "$_gitbranch" /etc/v2ray/233boy/v2ray --depth=1
+                git clone https://github.com/weiyanwei412/yuming.git -b "master" /etc/v2ray/233boy/v2ray --depth=1
                 popd
 
 
